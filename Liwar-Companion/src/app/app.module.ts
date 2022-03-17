@@ -6,6 +6,7 @@ import { WarbandPanelComponent } from './warband-panel/warband-panel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {MatInputModule} from '@angular/material/input';
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule      
   ],
   providers: [],
   bootstrap: [AppComponent]
