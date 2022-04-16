@@ -22,7 +22,7 @@
         <!-- {{warband.value}} -->
         <li *ngFor="let recipient4 of warband.value">
             {{recipient4.name}} Spare: {{recipient4.Spare}} <button mat-button (click) ="recipient4.Set_AF(-1)">-</button> AF: {{recipient4.AF}} <button mat-button (click) ="recipient4.Set_AF(1)">+</button>
-            <button mat-button (click) ="recipient4.Set_AM(-1)">-</button> {{recipient4.AM}} <button mat-button (click) ="recipient4.Set_AM(1)">+</button>
+            <button mat-button (click) ="recipient4.Set_AM(-1)">-</button> AM: {{recipient4.AM}} <button mat-button (click) ="recipient4.Set_AM(1)">+</button>
         </li>
 
         <!-- <div *ngFor='let member of myWarNameS[i];let j = index' >
