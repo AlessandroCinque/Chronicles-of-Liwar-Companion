@@ -39,6 +39,18 @@ export class Members
                 this.AF = this.AF -1
             }
             else
+
+            if( this.AF !=0)
+            {
+                this.Spare += 1
+            }
+            
+
+            if(this.Spare <= this.MAX_Spare && this.AF > 0)
+            {
+                this.AF = this.AF -1
+            }
+            else if( this.AF !=0)
             {
                 this.Spare = this.MAX_Spare
             }
@@ -48,7 +60,37 @@ export class Members
     }
     Set_AM(value:number)
     {
-       
+        if (value > 0)
+        {
+            this.Spare = this.Spare - 1
+
+            if(this.Spare >= 0)// Maybe AM has also a max value
+            {
+                this.AM += 1
+            }
+            else
+            {
+                this.Spare = 0
+            }
+
+        }
+        else
+        {
+            if( this.AM !=0)
+            {
+                this.Spare += 1
+            }
+            
+
+            if(this.Spare <= this.MAX_Spare && this.AM > 0)
+            {
+                this.AM = this.AM -1
+            }
+            else if( this.AM !=0)
+            {
+                this.Spare = this.MAX_Spare
+            }
+        }
     }
     Set_M(value:number)
     {
